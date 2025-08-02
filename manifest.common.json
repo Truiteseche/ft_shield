@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "ft_shield",
+    "version": "0.0.2",
+    "description": "Avoid unfair community services (TIG) by changing the purchase button in the 42 intra shop",
+    "homepage_url": "https://shop.intra.42.fr/",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "*://shop.intra.42.fr/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://shop.intra.42.fr/*"
+            ],
+            "css": [
+                "styles/style.css"
+            ],
+            "js": [
+                "content/handler.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "48": "assets/icons/bibmath-blackboard-logo-48.png"
+    },
+    "web_accessible_resources": [{
+        "resources": [
+
+        ],
+        "matches": ["*://shop.intra.42.fr/*"]
+    }]
+}

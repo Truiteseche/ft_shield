@@ -1,0 +1,11 @@
+{
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "ft_shield - Cover your back in the 42 intra shop"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ft_shield@ft_shield.fr"
+        }
+    }
+}

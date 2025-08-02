@@ -1,0 +1,5 @@
+
+.hide-btn :has( > .shop-item):first-child .shop-item {
+    display: none;
+    /* background-color: red; */
+}
